@@ -52,7 +52,41 @@ body{
         width: 23%;
     }
 }
+@media (min-width: 970px){
+    .img-box img{
+        width: 10%;
+    }
+}
 .list-box{
     margin-left: 20px;
     float: left;
+}
+
+.color-box-com{
+    display: inline; 
+    padding: 2px 3px;
+    border-radius: 3px; 
+    background-color: #b59981; 
+    color: white;
+}
+.color-box-rare{
+    display: inline; 
+    padding: 2px 3px;
+    border-radius: 3px; 
+    background-color: #7cadd5; 
+    color: white;
+}
+.color-box-epic{
+    display: inline; 
+    padding: 2px 3px;
+    border-radius: 3px; 
+    background-color: #f35e7d; 
+    color: white;
+}
+.color-box-anci{
+    display: inline; 
+    padding: 2px 3px;
+    border-radius: 3px; 
+    background-color: #9f51f3; 
+    color: white;
 }
