@@ -1,0 +1,373 @@
+* {
+    font-family: inherit;
+}
+a{
+    text-decoration: none;
+}
+body:lang(ko){
+    word-break: keep-all;
+}
+body{
+    margin: 0;
+    background-color: white;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.content{
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
+}
+.content-box{
+    position: relative;
+    height: 800px;
+}
+@media (max-width: 640px){
+    .content-box {
+        height: 926px;
+    }
+}
+@media (max-width: 400px){
+    .content-box {
+        height: 684px;
+    }
+}
+
+
+/* -----HEADER----- */
+#header{
+    padding: 20px 40px;
+    background: black;
+}
+h1{
+    float: left;
+}
+
+
+/* ---NAVIGATION--- */
+nav{
+    float: right;
+}
+nav .gnb>li{
+    float: left;
+}
+.gnb>li ul{
+    display: none;
+}
+
+/* -----VIDEO----- */
+.videoBOX{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+/* ---VIDEO_M--- */
+.video-M {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    display: none;
+    display: block;
+}
+
+@media (min-width: 640px) {
+    .video-M {
+        display: block;
+    }
+}
+
+@media (min-width: 640px) {
+    .video-M {
+        display: none;
+    }
+}
+
+/* ---VIDEO_PC---- */
+.video-PC {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: cover;
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .video-PC
+     {
+        display: block;
+    }
+}
+
+
+/* -----MAINBODY----- */
+.box1{
+    display: -webkit-box; 
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box1-img{
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.box1-logo{
+    width: 220px;
+    height: 134px;
+}
+@media (min-width: 640px){
+    .box1-logo {
+        width: 370px;
+        height: 223px;
+    }
+}
+
+.box1-img-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+picture>img{
+    position: absolute; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: center center; 
+    opacity: 1; 
+    transition: opacity 500ms ease 0s;
+}
+
+.box2{
+    width: 84px;
+    height: 84px;
+    margin: 20px 0;
+}
+@media (min-width: 640px){
+    .box2 {
+    margin: 40px 0;
+    width: 162px;
+    height: 162px;
+    }
+}
+
+@media (min-width: 400px){
+    .box2 {
+        margin: 48px 0;
+        width: 124px;
+        height: 124px;
+    }
+}
+
+
+
+.box3{
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+@media (min-width: 640px){
+    .box3 {
+        padding: 0 10px;
+    }
+}
+
+.box3-down{
+    margin: 0 2px;
+}
+@media (min-width: 640px){
+    .box3-down {
+        padding: 0 5px;
+    }
+}
+
+.box3-down-img{
+    height: 12.5vw;
+    max-height: 70px;
+}
+@media (min-width: 640px){
+    .box3-down-img {
+        height: 70px;
+    }
+}
+/* -----CAFELOGO----- */
+.Cafelogo-warrper{
+    top: 50px;
+}
+@media (min-width: 25em){
+    .Cafelogo-warrper {
+        top: 70px;
+    }
+}
+@media (min-width: 40em){
+    .Cafelogo-warrper {
+        top: 5rem;
+    }
+}
+.css-11gw3na{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    pointer-events: none;
+    z-index: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.Cafelogo-box{
+    float: right;
+    pointer-events: all;
+}
+.Cafelogo{
+    width: 43px;
+    height: 60px;
+}
+@media (min-width: 640px){
+    .Cafelogo{
+        width: 83px;
+        height: 114px;
+    }
+}
+
+/* -----FOOTER----- */
+.footer{
+    background: rgb(25, 28, 36);
+    padding-top: 44px;
+    padding-bottom: 70px;
+    font-size: 48px;
+}
+@media (min-width: 640){
+    .footer{
+        font-size:70px;
+    }
+}
+.box4{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 640px;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+@media (min-width: 640px){
+    .box4{
+        max-width: 1200px;
+    }
+
+}
+.box4-sns{
+    margin-bottom: 64px;
+}
+.box4-icons{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.box4-icon{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 0 2.56px;
+    width: 48px;
+    height: 48px;
+}
+
+.box4-icon>svg{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width: 400px){
+    .box4-icon {
+        margin: 0 5.12px 4.8px 5.12px;
+    }
+}
+
+.addres{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.D-addres{
+    font-size: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    color: #fff;
+}
