@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko" data-rh="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/EPIC.css">
+
+    <title>COOKIERUN: KINGDOM</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+</head>
+
+<body>
+    <div id="list-fold">
+        <div id="spreadBtn" class="fold">
+            <div> [ 펼치기 · 접기 ]</div>
+        </div>
+        <div id="hiddenContent" class="example" style="display: none;">
+            <div class="rating-list">
+                <div class="rating-list-in" style="background-color: #e7d7cb;">
+                    <img src="../Rating-img/COMMON.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="../html/Rating-COMMON.html#Brave">용감한 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Strawberry">딸기맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Wizard">마법사맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Ninja">닌자맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Muscle">근육맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Angel">천사맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Beet">비트맛 쿠키</a>
+                </div>
+                <div class="rating-list-in" style="background-color: #d6ffff;">
+                    <img src="../Rating-img/RARE.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="../html/Rating-RARE.html#Custard">커스터드 3세맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Clover">클로버맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Princess">공주맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Knight">용사맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Cherry">체리맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Gumball">버블껌맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Alchemist">연금술사맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Adventurer">탐험가맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Onion">양파맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Blackberry">블랙베리맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Pancake">팬케이크맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Carrot">당근맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Avocado">아보카도맛 쿠키</a>
+                </div>
+                <div class="rating-list-in" style="background-color: #ffafc6;">
+                    <img src="../Rating-img/EPIC.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="#ChiliPepper">칠리맛 쿠키</a>·
+                    <a href="#SnowSugar">눈설탕맛 쿠키</a>·
+                    <a href="#Vampire">뱀파이어맛 쿠키</a>·
+                    <a href="#TigerLily">정글전사 쿠키</a>·
+                    <a href="#Werewolf">웨어울프맛 쿠키</a>·
+                    <a href="#">허브맛 쿠키</a>·
+                    <a href="#">민트초코 쿠키</a>·
+                    <a href="#">스파클링맛 쿠키</a>·
+                    <a href="#">호밀맛 쿠키</a>·
+                    <a href="#">마들렌맛 쿠키</a>·
+                    <a href="#">에스프레소맛 쿠키</a>·
+                    <a href="#">우유맛 쿠키</a>·
+                    <a href="#">자색고구마맛 쿠키</a>·
+                    <a href="#">다크초코 쿠키</a>·
+                    <a href="#">독버섯맛 쿠키</a>·
+                    <a href="#">석류맛 쿠키</a>·
+                    <a href="#">감초맛 쿠키</a>·
+                    <a href="#">구미호맛 쿠키</a>·
+                    <a href="#">슈크림맛 쿠키</a>·
+                    <a href="#">라떼맛 쿠키</a>·
+                    <a href="#">아몬드맛 쿠키</a>·
+                    <a href="#">블랙레이즌맛 쿠키</a>·
+                    <a href="#">딸기크레페맛 쿠키</a>·
+                    <a href="#">페스츄리맛 쿠키</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ChiliPepper"></div>
+    <br>
+    <div class="cookie-box">
+        <img src="../EPIC-img/칠리맛.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../EPIC-img/칠리맛-스킬.png">
+                <div class="skill-text">
+                    <div class="skill-name">발빠른 습격</div>
+                    후방의 적들을 기습해 범위피해를 준다. 마지막 검격은 치명타가 적용<br>
+                    <div class="skill-cool">쿨타임: 12초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                칠리맛 쿠키
+                                <br>Chili Pepper Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/EPIC.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                여성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/침투형.png" loading="lazy">
+                                침투형
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                중앙
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                2021. 01. 21.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="SnowSugar"></div>
+    <br>
+    <div class="cookie-box">
+        <img src="../EPIC-img/눈설탕맛.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../EPIC-img/눈설탕맛-스킬.png">
+                <div class="skill-text">
+                    <div class="skill-name">눈보라 치는 날</div>
+                    스노우킹을 소환해 눈보라를 뿜어 지속적인 범위 피해를 입힌다. 맞은 적들의 공격 속도가 감소한다.<br>
+                    <div class="skill-cool">쿨타임: 20초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                눈설탕맛 쿠키
+                                <br>Snow Sugar Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/EPIC.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                남성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/마법형.png" loading="lazy">
+                                마법형
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                중앙
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                2021. 01. 21.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="Vampire"></div>
+    <br>
+    <div class="cookie-box">
+        <img src="../EPIC-img/뱀파이어맛.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../EPIC-img/뱀파이어맛-스킬.png">
+                <div class="skill-text">
+                    <div class="skill-name">흡혈</div>
+                    박쥐로 변신하여 가장 멀리있는 적을 피해를 주고 피해량의 일부를 회복<br>
+                    <div class="skill-cool">쿨타임: 13초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                뱀파이어맛 쿠키
+                                <br>Vampire Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/EPIC.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                남성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/침투형.png" loading="lazy">
+                                침투형
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                후방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                2021. 01. 21.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="TigerLily"></div>
+    <br>
+    <div class="cookie-box">
+        <img src="../EPIC-img/정글전사맛.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../EPIC-img/정글전사맛-스킬.png">
+                <div class="skill-text">
+                    <div class="skill-name">타이거라이더</div>
+                    버터호랑이의 등에 올라타 돌진하여 주위에 범위 피해를 입히고 기절시킨다. 일반 공격보다 빠르고 강한 근접 공격을 한다.<br>
+                    <div class="skill-cool">쿨타임: 13초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                정글전사 쿠키
+                                <br>Tiger Lily Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/EPIC.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                여성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/사격형.png" loading="lazy">
+                                사격형
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                후방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                2021. 01. 21.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="Werewolf"></div>
+    <br>
+    <div class="cookie-box">
+        <img src="../EPIC-img/웨어울프맛.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../EPIC-img/웨어울프맛-스킬.png">
+                <div class="skill-text">
+                    <div class="skill-name">각성</div>
+                    범위 피해를 입히며 늑대로 변신한다. 체력이 더 좋아지고, 일반 공격보다 더 강하고 광범위한 2연타를 날린다.<br>
+                    <div class="skill-cool">쿨타임: 11초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                웨어울프맛 쿠키
+                                <br>Werewolf Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/EPIC.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                남성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating-img/돌격형.png" loading="lazy">
+                                돌격형
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                전방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                2021. 01. 21.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- MAIN JS -->
+    <script src="../js/Rating.js"></script>
+    <script src="../js/topbtn.js"></script>
+
+</body>
+
+</html>
