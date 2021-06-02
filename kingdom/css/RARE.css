@@ -5,6 +5,7 @@
 }
 html{
     margin-bottom: 200px;
+    margin-top: 30px;
 }
 a{
     text-decoration: none;
@@ -121,6 +122,17 @@ table tr td.table-typeimg img{
 }
 .rating-list img{
     width: 15%;
+}
+@media (min-width: 970px){
+    .rating-list img{
+        width: 8%;
+    }
+    .cookie-box{
+        width: 40%;
+    }
+    .cookie-box img{
+        width: 15%;
+    }
 }
 .rating-list-content{
     padding: 6px 0;
