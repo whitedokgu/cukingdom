@@ -6,6 +6,7 @@
 html{
     margin-top: 30px;
     margin-bottom: 200px;
+    font-size: 16px;
 }
 a{
     text-decoration: none;
@@ -135,7 +136,13 @@ table tr td.table-typeimg img{
         width: 40%;
     }
     .cookie-box img{
-        width: 15%;
+        width: 34%;
+    }
+    .skill-img img{
+        width: 20%;
+    }
+    .paragraph img{
+        width: 45%;
     }
 }
 
