@@ -1,2 +1,2 @@
 # cukingdom
-[킹덤](../cukingdom/kingdom/html/nav.html)
+[킹덤](./cukingdom/kingdom/html/nav.html)
