@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko" data-rh="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ANCIENT.css">
+
+    <title>COOKIERUN: KINGDOM</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+</head>
+
+<body>
+    <div id="list-fold">
+        <div id="spreadBtn" class="fold">
+            <div> [ 펼치기 · 접기 ]</div>
+        </div>
+        <div id="hiddenContent" class="example" style="display: none;">
+            <div class="rating-list">
+                <div class="rating-list-in" style="background-color: #e7d7cb;">
+                    <img src="../Rating/Rating-img/COMMON.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="../html/Rating-COMMON.html#Brave">용감한 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Strawberry">딸기맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Wizard">마법사맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Ninja">닌자맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Muscle">근육맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Angel">천사맛 쿠키</a> ·
+                    <a href="../html/Rating-COMMON.html#Beet">비트맛 쿠키</a>
+                </div>
+                <div class="rating-list-in" style="background-color: #d6ffff;">
+                    <img src="../Rating/Rating-img/RARE.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="../html/Rating-RARE.html#Custard">커스터드 3세맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Clover">클로버맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Princess">공주맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Knight">용사맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Cherry">체리맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Gumball">버블껌맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Alchemist">연금술사맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Adventurer">탐험가맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Onion">양파맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Blackberry">블랙베리맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Pancake">팬케이크맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Carrot">당근맛 쿠키</a> ·
+                    <a href="../html/Rating-RARE.html#Avocado">아보카도맛 쿠키</a>
+                </div>
+                <div class="rating-list-in" style="background-color: #ffafc6;">
+                    <img src="../Rating/Rating-img/EPIC.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="../html/Rating-EPIC.html#ChillPepper">칠리맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#SnowSugar">눈설탕맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Vampire">뱀파이어맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#TigerLily">정글전사 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Werewolf">웨어울프맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Herb">허브맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#MintChoco">민트초코 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Sparkling">스파클링맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Rye">호밀맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Madeleine">마들렌맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Espresso">에스프레소맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Milk">우유맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#PurpleYam">자색고구마맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#DarkChoco">다크초코 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Poisonmushroom">독버섯맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Pomegranate">석류맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Licorice">감초맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Kumiho">구미호맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#CreamPuff">슈크림맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Latte">라떼맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Almond">아몬드맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#BlackRaisin">블랙레이즌맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#StrawberryCrepe">딸기크레페맛 쿠키</a>·
+                    <a href="../html/Rating-EPIC.html#Pastry">페스츄리맛 쿠키</a>
+                </div>
+                <div class="rating-list-in" style="background-color: #d79bff;">
+                    <img src="../Rating/Rating-img/ANCIENT.png">
+                </div>
+                <div class="rating-list-content">
+                    <a href="#Purevanilla">퓨어바닐라 쿠키</a> ·
+                    <a href="#Hollyberry">홀리베리 쿠키(미출시)</a> ·
+                    <a href="#Goldcheese">골드치즈 쿠키(미출시)</a> ·
+                    <a href="#Darkcacao">다크카카오 쿠키(미출시)</a> ·
+                    <a href="#Whitelily">세인트릴리 쿠키(미출시)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Purevanilla"></div>
+    <br>
+    <br>
+    <div class="cookie-box">        
+        <img src="../ANCIENT-img/퓨어바닐라.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../ANCIENT-img/퓨어바닐라-스킬.png">
+                <div class="skill-text">
+                    <div class="skill-name">사랑과 평화</div>
+                    아군 전체의 체력을 회복시키고 최대 체력의 일정 비율만큼 체력 보호막을 생성한다.<br>
+                    <div class="skill-cool">쿨타임: 19초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                퓨어바닐라 쿠키
+                                <br>Pure vanilla Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/ANCIENT.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                남성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/회복형.png" loading="lazy">
+                                회복형
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                후방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                2021. 04. 08.
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="Hollyberry"></div>
+    <br>
+    <br>
+    <div class="cookie-box">        
+        <img src="../ANCIENT-img/홀리베리.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../none-img/그림없음.png">
+                <div class="skill-text">
+                    <div class="skill-name">???</div>
+                    튜토리얼에서의 모습을 보면 앞으로 돌진해서 적들을 뒤로 밀치는 류로 추정되며, 동시에 파티원의 방어력을 높혀준다. 그런데 오류인지 원래 그런 것인지 3단 케이크 마녀와 싸울 때 스킬을 쓰면 잡졸들을 뚫고 3단 케이크 마녀 바로 앞까지 접근해 공격하는 모습을 볼 수 있다.<br>
+                    <div class="skill-cool">쿨타임: ??초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                홀리베리 쿠키
+                                <br>Holly berry Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/ANCIENT.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                여성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/방어형.png" loading="lazy">
+                                방어형(추정)
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                전방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                미출시
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="Goldcheese"></div>
+    <br>
+    <br>
+    <div class="cookie-box">        
+        <img src="../ANCIENT-img/골드치즈.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../none-img/그림없음.png">
+                <div class="skill-text">
+                    <div class="skill-name">???</div>
+                    튜토리얼에서 보여준 모습을 보면 다발의 화살을 생성해 가까운 적을 단일 공격하며 아군의 공격력을 버프시킨다.<br>
+                    <div class="skill-cool">쿨타임: ??초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                골드치즈 쿠키
+                                <br>Gold cheese Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/ANCIENT.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                여성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/사격형.png" loading="lazy">
+                                사격형(추정)
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                후방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                미출시
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="Darkcacao"></div>
+    <br>
+    <br>
+    <div class="cookie-box">        
+        <img src="../ANCIENT-img/다크카카오.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../none-img/그림없음.png">
+                <div class="skill-text">
+                    <div class="skill-name">???</div>
+                    튜토리얼에서 보여준 모습은, 적을 검으로 찌른 후 이펙트를 거대화시킨 채로 뛰어올라 다시 크게 내려찍는다. 내려찍을 때 아들인 다크초코 쿠키와 마찬가지로 적들이 위로 떠오르고 방어력이 감소한다.<br>
+                    <div class="skill-cool">쿨타임: ??초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                다크카카오 쿠키
+                                <br>Dark cacao Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/ANCIENT.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                남성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/돌격형.png" loading="lazy">
+                                돌격형(추정)
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                전방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                미출시
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div id="Whitelily"></div>
+    <br>
+    <br>
+    <div class="cookie-box">        
+        <img src="../ANCIENT-img/세인트릴리.png" class="cookie">
+        <div class="skill">
+            <div class="skill-img">
+                <img src="../none-img/그림없음.png">
+                <div class="skill-text">
+                    <div class="skill-name">???</div>
+                    튜토리얼에서 등장한 모습을 보면 전 파티원에게 치명타 확률을 증가시켜주고 전방으로 백합을 터트려 피해를 준다.<br>
+                    <div class="skill-cool">쿨타임: ??초</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-wrap">
+            <table class="table1">
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="table-name">
+                            <div class="paragraph">
+                                세인트릴리 쿠키
+                                <br>White lily Cookie
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-rating">
+                            <div class="paragraph">
+                                등급
+                            </div>
+                        </td>
+                        <td class="table-ratingimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/ANCIENT.png" class="image" loading="lazy">
+                            </div>
+                        </td>
+                        <td class="table-gender">
+                            <div class="paragraph">
+                                성별
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                여성
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-type">
+                            <div class="paragraph">
+                                유형
+                            </div>
+                        </td>
+                        <td class="table-typeimg">
+                            <div class="paragraph">
+                                <img src="../Rating/Rating-img/지원형.png" loading="lazy">
+                                지원형(추정) or
+                                <img src="../Rating/Rating-img/마법형.png" loading="lazy">
+                                마법형(추정)
+                            </div>
+                        </td>
+                        <td class="table-position">
+                            <div class="paragraph">
+                                포지션
+                            </div>
+                        </td>
+                        <td>
+                            <div class="paragraph">
+                                후방
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-date">
+                            <div class="paragraph">
+                                출시일
+                            </div>
+                        </td>
+                        <td colspan="3">
+                            <div class="paragraph">
+                                미출시
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- MAIN JS -->
+    <script src="../js/Rating.js"></script>
+    <script src="../js/topbtn.js"></script>
+    </body>
+    </html>
+
+
+    
