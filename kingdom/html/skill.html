@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/skill.css">
+    <title>COOKIERUN: KINGDOM</title>
+</head>
+
+<body>
+    <div class="content">
+        <div id="spreadBtn" class="fold">
+            <div> <a href="#skill">스킬</a> · <a href="../html/level.html#level">레벨</a></div>
+        </div>
+        <div class="content-box">
+            <span id="skill">
+                <h2>스킬</h2>
+            </span>
+            <div class="list-box">
+                쿠키 고유의 능력으로 일반적으로 액티브지만 뱀파이어맛 쿠키의 평타 흡혈이나 페스츄리맛 쿠키의 확산 공격처럼 패시브 효과를 함께 가지고 있는 경우도 있다.
+                <br><br>
+                모든 스킬은 발동하는 데 최소 발동 시간이 존재하며, PvE에서 자동전투를 켰거나 PvP에서는 한 쿠키가 스킬을 발동하면 1초 동안 다른 아군 쿠키들이 스킬을 발동할 수 없다.
+                <br><br>
+                전투 시작 시 모든 스킬은 일정량의 쿨타임이 돌아가는 상태인데 이것을 시작 쿨타임이라고 한다. 자동 전투 시 시작 쿨타임이 짧은 쿠키부터 스킬을 시전하며 시작 쿨타임이 같을 경우 UI
+                기준 우측의 쿠키가 우선적으로 스킬을 시전한다. 
+                그 후 첫 스킬을 시전한 쿠키를 기준으로 왼쪽에 있는 쿠키 중 스킬 시전이 가능한 쿠키부터 스킬을 시전한다. 무조건 자동 전투인 아레나에서는 이 시작 순서가
+                전투의 흥망을 좌우하기 때문에 시작 쿨타임을 조정하는 것이 필수가 된다.
+                <br><br>
+                시작 쿨타임은 오직 토핑의 영향만 받으며 <strong>기본 쿨타임x0.3x(1-토핑의 쿨타임 감소 수치)</strong>로 계산되고 소수점 첫째 자리에서 반올림한다. 
+                <div class="Description" title="이 때문에 쿨타임 15초 스킬들의 시작 쿨타임은 5초가 아닌 4초로 계산된다.">다만 0.5의 경우 반올림하지 않고 버림한다.</div>
+                <br><br>
+                첫 스킬 시전 이후에는 실제 쿨타임이 적용되며 실제 쿨타임의 경우 <strong>기본 쿨타임x(1-토핑의 쿨타임 감소 수치)x(1-시계 보물의 쿨타임 감소 수치)</strong>가 적용되고 소수점 둘째자리에서
+                반올림한다. 즉 1초 단위로
+                끊는 시작 쿨타임과 달리 0.1초 단위까지 세분화된다.
+                <br><br>
+                스킬 시전 중에 기절, 에어본, 침묵 등의 CC기를 맞으면 스킬이 캔슬될 수 있다. 다만 일부 스킬의 경우 툴팁에 '스킬 끊김에 강해진다.'라는 문구가 쓰인 경우 공격을 맞아도 스킬이
+                캔슬당하지 않는다.
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
