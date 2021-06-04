@@ -1,0 +1,61 @@
+/*-----LIST TABLE-----*/
+.fold{
+    width: 100%;
+    text-align: center;
+}
+.fold div{
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+}
+
+.rating-list{
+    width: 99.6%;
+    text-align: center;
+}
+.rating-list-in{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    padding: 6px 0;
+}
+.rating-list img{
+    width: 15%;
+}
+@media (min-width: 970px){
+    .rating-list img{
+        width: 8%;
+    }
+    .cookie-box{
+        width: 40%;
+    }
+    .cookie-box img{
+        width: 34%;
+    }
+    .skill-img img{
+        width: 20%;
+    }
+    .paragraph img{
+        width: 45%;
+    }
+}
+
+.rating-list-content{
+    padding: 6px 0;
+}
+
+/* -----BTN-----*/
+#spreadBtn{
+    text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a{
+    text-decoration: none;
+    color: #0275d8;
+}
