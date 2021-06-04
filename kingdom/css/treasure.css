@@ -5,6 +5,11 @@ html{
     margin-bottom: 200px;
     font-size: 16px;
 }
+@media (max-width: 500px){
+    html{
+        font-size: 14px;
+    }
+}
 a{
     text-decoration: none;
 }
@@ -30,7 +35,7 @@ body{
         padding-left: 300px;
     }
 }
-@media (max-width: 955px){
+@media (max-width: 960px){
     .content{
         padding-right: 150px;
         padding-left: 150px;
@@ -38,8 +43,8 @@ body{
 }
 @media (max-width: 500px){
     .content{
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 .content-box{
@@ -61,4 +66,60 @@ body{
     border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
     border-image-slice: 1;
     margin-top: 7px;
+}
+
+/* --------------------본문-------------------- */
+.heading{
+    margin: 19px 0  13px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.table-wrap{
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+.table{
+    border:2px solid #fff;
+}
+table.table tbody tr td{
+    background-color:#fff; 
+    text-align:center;
+}
+.image-align-normal{
+    width: 100%;
+}
+.image-wrapper{
+    width: 100%;
+}
+img.imgae{
+    width: 100%;
+}
+.indent{
+    padding-left: 10px;
+}
+.quote{
+    padding: 1em calc(2em + 25px) 1em 1em;
+    margin: 1em 0;
+    background: #eee;
+    display: table;
+    border: 2px dashed #ccc;
+    border-left: 5px solid #71bc6d;
+}
+.quote .paragraph{
+    margin-bottom: 0;
+}
+ul{
+    padding-left: 8px;
+}
+.list{
+    margin: 6.4px 0 6.4px 24px;
+}
+.paragraph{
+    margin-bottom: 16px;
+}
+
+.to-top {
+    background: #4050aa;
 }

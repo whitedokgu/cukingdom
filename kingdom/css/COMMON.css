@@ -15,6 +15,20 @@ a{
 .rating-list-content a:hover{
     text-decoration:underline;
 }
+@media (min-width: 970px){
+    .cookie-box{
+        width: 40%;
+    }
+    .cookie-box img{
+        width: 34%;
+    }
+    .skill-img img{
+        width: 20%;
+    }
+    .paragraph img{
+        width: 45%;
+    }
+}
 body:lang(ko){
     word-break: keep-all;
 }
@@ -130,4 +144,7 @@ table tr td.table-typeimg img{
 #list-fold{
     border: 2px solid #cba98a;
     margin-top: 7px;
+}
+.to-top {
+    background: #DA914B;
 }

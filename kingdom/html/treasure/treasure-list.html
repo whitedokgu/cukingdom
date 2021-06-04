@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ko" data-rh="lang">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/treasure.css">
+    <link rel="stylesheet" href="../../css/top.css">
+    <link rel="stylesheet" href="../../css/fold.css">
+
+    <title>COOKIERUN: KINGDOM</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-box">
+            <div id="list-fold">
+                <div id="spreadBtn" class="fold">
+                    <div> [ 펼치기 · 접기 ]</div>
+                </div>
+
+                <div id="hiddenContent" class="example" style="display: none;">
+                    <div class="rating-list">
+                        <div class="rating-list-in" style="background-color: #e7d7cb;">
+                            <a href="#common"><img src="../../Rating-img/COMMON.png"></a>
+                        </div>
+                        <div class="rating-list-content">
+                            <a href="#horn">문지기 유령의 단단한 오른쪽 뿔</a> ·
+                            <a href="#Pocket">치즈볼새의 소중한 동전 주머니</a> ·
+                            <a href="#clock">왕자 곰젤리의 말랑말랑 젤리시계</a> ·
+                            <a href="#Safe">은행강도의 탐욕스런 마법 금고</a>
+                        </div>
+
+                        <div class="rating-list-in" style="background-color: #d6ffff;">
+                            <img src="../../Rating-img/RARE.png">
+                        </div>
+
+                        <div class="rating-list-content">
+                            <a href="#catapult">어린 순례자의 장난감 새총</a> ·
+                            <a href="#icecream">아이스크림 상인 유령의 신기루 아이스크림</a> ·
+                            <a href="#amulet">무녀맛 쿠키의 영험한 종이부적</a> ·
+                            <a href="#candy">행복한 곰젤리의 숨겨둔 사탕</a> ·
+                            <a href="#sickle">골카론의 날카로운 낫</a>
+                        </div>
+
+                        <div class="rating-list-in" style="background-color: #ffafc6;">
+                            <img src="../../Rating-img/EPIC.png">
+                        </div>
+
+                        <div class="rating-list-content">
+                            <a href="#Martial arts">설탕백조의 샤이닝 설탕깃털</a> ·
+                            <a href="#Martialarts">나이든 순례자의 승리를 향한 무공비급</a> ·
+                            <a href="#Torch">순례자의 마을 촌장의 활활 화르륵 횃불</a> ·
+                            <a href="#mucus">작은 뿔꿈틀이의 끈적끈적 방어용 점액</a> ·
+                            <a href="#Branch">정화된 석류신목의 신성한 나뭇가지</a> ·
+                            <a href="#Monocle">책방골목 올빼미의 뽀득뽀득 모노클</a> ·
+                            <a href="#Cloak">격분한 도서관 사서의 마법 망토</a> ·
+                            <a href="#Staff">눈 먼 치료사의 힐링 스태프</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <h2 class="heading">
+                <div id="common">COMMON</div>
+            </h2>
+            <h3 class="heading">
+                <div id="horn">문지기 유령의 단단한 오른쪽 뿔</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table" style="border:2px solid #fff;">
+                        <tbody>
+                            <tr>
+                                <td style="background-color:#fff; text-align:center;">
+                                    <div class="paragraph">
+                                        <span class="image-align-normal" style="width:100px;">
+                                            <span class="image-wrapper" style="width: 100%;">
+                                                <img class="image" width="100%" src="../../treasure-img/오른쪽뿔.png"
+                                                    loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">단단한 뿔로 몸을 지켜서 모든 쿠키의 방어력이 증가합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 방어력 (30 + 1.4n)% 증가 </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    가장 낮은 등급임에도 불구하고 30% 라는 방어력을 비약적으로 상승시킨다는 엄청난 옵션 때문에 <strong>필수 보물</strong>로 꼽힌다.
+                    게다가 커먼 등급이어서 얻기 쉽다는 것도 큰 장점. 증가하는 방어력은 최종 계산 후 곱연산으로 적용된다.
+                    <br>
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Pocket">치즈볼새의 소중한 동전 주머니</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/동전주머니.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">티끌 모아 태산! 적을 쓰러뜨릴 때 일정 확률로 추가 코인을 얻습니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 코인 획득 확률 (20 + 5.5n)% </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    코인 획득률은 꽤 높지만 본가 게임과 다르게, 전투에서 획득하는 코인량이 극도로 적은데다, 무엇보다<strong>소원나무를 통해서 만 코인 이상을 우습게 벌어들일 수 있기
+                        때문에</strong>거의 착용하지 않는 보물.
+                    뽑기로 이게 나왔다면 완전히 꽝 취급을 받는다.
+                    <br>
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="clock">왕자 곰젤리의 말랑말랑 젤리시계</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/젤리시계.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">언제나 조금씩 빨라지는 젤리시계 덕분에 모든 쿠키의 쿨타임이 감소합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 쿨타임 (10 + 1.4n)% 감소 </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    커먼 등급의 보물이지만 스킬 쿨타임을 많이 줄여준다는 능력 덕분에 뉴비부터 랭커까지 장착하는 거의 필수 보물이다. 마찬가지로 커먼 등급이라 구하기 쉬운 것도 장점이다. 어느 유형의
+                    쿠키에게든 효과가 매우 강력하지만 특히 전투 지속력을 높이는 회복형/지원형 쿠키들과 잘 맞는다. PVP같이 0.1초라도 더 먼저 스킬을 사용해야하는 모드에서 그 어떤 보물보다
+                    거대한 존재감을 내뿜는다.
+                    <br>
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="safe">은행강도의 탐욕스런 마법 금고</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../none-img/그림없음.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">욕심많은 누군가의 마법 금고가 자력 1단계의 힘으로, 전투 승리 시 5% 추가 코인을 얻습니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.05.28</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 마법 금고 자력 1단계, (5+ 0.4n)% 추가 코인 </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    효과 자체는 쿠키런 정규 시리즈의 자력을 생각하면 되며, 전투에서 승리하면 추가 코인을 얻는다. 
+                    하지만 위의 치즈볼새의 동전 주머니처럼 PvE에서만 제 위력을 발휘하는데다 애초에 전투로 얻는 돈이 너무 적어서 역시 쓸모가 없다.
+                    <br>
+                </div>
+            </div>
+            <br><br>
+
+            <h2 class="heading">
+                <div id="rare">RARE</div>
+            </h2>
+
+            <h3 class="heading">
+                <div id="catapult">어린 순례자의 장난감 새총</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/새총.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">새총의 힘이 발동해 가장 멀리 있는 적 하나의 방어력을 감소시킵니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과:방어력 (30 + 3.6n)% 감소 </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임 10초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    후방의 적을 저격하는 침투형 멤버들과 잘 맞긴 하지만, 액티브에 단일 대상 공격이기 때문에 사용처는 한정적이다. 
+                    주로 보스전에서 극딜 조합의 폭딜 보조용으로 넣거나 PVP에서 뱀파이어맛 쿠키의 한 명 암살을 보조하기 위해 쓰이고 있다. 
+                    8-30의 3단 케이크 마녀는 체력이 매우 높아 시간이 부족하기 때문에 채용하기도 한다. 
+                    길드 토벌전에선 케이크 용에게 딜을 더 넣기 위해 뿔을 빼고 채용하는 경우가 많다.
+                    <br>
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="icecream">아이스크림 상인 유령의 신기루 아이스크림</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/신기루아이스크림.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">혼란을 일으키는 신기루가 가까운 적의 방어력을 감소시킵니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 방어력 (10 + 3.6n)% </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임 10초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    일정 범위 내 적 여러 명의 방어력을 깎는다. 
+                    범위가 생각보다 넓기 때문에 PVP에서 쓴다면 전열부터 후열까지 모두 적용된다. 
+                    그 대신 새총의 방깎이 기본 30%부터 시작하는 반면 아이스크림은 겨우 10%부터 시작하기 때문에 활용 가치가 낮다. 
+                    게다가 쿨타임이 20초로, 다른 액티브 보물과 비교해봐도 상당히 긴 편이며, 자동전투에서 액티브 보물이 다 그렇듯 적이 있던말던 무조건 쿨타임이 돌아오면 바로 쓰이기 때문에 뺑이에서의 효율도 별로다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="amulet">무녀맛 쿠키의 영험한 종이부적</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/종이부적.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">종이부적의 저주가 가까운 적에게 날아가 모든 쿠키의 공격력 총합에 비례하는 피해를 주고, 모든 버프를 제거합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 피해량 (15 + 1.8n)% </div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임 15초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    버프 제거는 영구적이지만 아래의 횃불처럼 팀원 전체 합산이라 대미지가 생각보다 시원치 않은데다, 액티브라는 점이 발목을 잡는다. 
+                    특히 도발형 적이 나오는 에피소드 4 이후부터는 영 활용도가 시원치 않다.
+                    제대로 활용할 수 분야는 오늘의 현상수배 스테이지 중 마법형과 침투형 스테이지를 플레이할 때 마법형의 단계 무효화 장벽과 침투형에서 석류 사슴벌레를 제외한 잔챙이들이 두르는 보호막을 일격에 제거하는 것으로, 보호막만 제대로 제거해 줘도 클리어가 매우 수월해진다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="candy">행복한 곰젤리의 숨겨둔 사탕</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/사탕.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">사탕의 효과는 굉장했다! 공격력이 제일 높은 쿠키의 공격력과 치명타 확률이 증가합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 6레벨까지 공격력 (16 + 4n)% 치명타 확률 20% 증가, 7레벨부터 공격력 40% 치명타 확률 (20 + 3.3(7-n))% 증가</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임 15초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    여기에서의 행복한 곰젤리는 1-12에서 만나는 뚱보 곰젤리를 말한다.
+                    이 보물이 적용되는 대상은 기본 공격력을 기준으로 결정하기 때문에 공격력도 준수하면서 스킬의 효과가 강력한 쿠키를 파티 멤버로 사용할 때 장착하는 것이 좋다. 
+                    패시브 보물이 아니기 때문에 지속시간은 보물레벨과 상관없이 5-6초정도로 지속된다.
+                    주로 아레나에서는 용감한 쿠키, 아몬드맛 쿠키와 연계하여 메인폭딜러의 순간 딜을 증폭시키는 덱에서 사용된다. 
+                    호밀맛 쿠키나 블랙레이즌맛 쿠키의 공격력을 높이는 것이 목적. 
+                    공격력이 가장 높은 쿠키 하나에게만 적용되기 때문에, 메인딜러로 쓸 쿠키의 공격력이 가장 높아야 하므로 다른 쿠키의 부옵에서 공격력 옵션을 조정할 필요가 있다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="sickle">골카론의 날카로운 낫</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/낫.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">골카론의 낫이 도와서 모든 쿠키의 치명타 확률이 증가합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 치명타 확률 (10 + 1.8n)% 증가</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    쿠키런 킹덤의 치명타 피해량은 150%로 높은 편은 아니라 치명타율을 올리는 것보단 그냥 공격력을 올리는 게 낫다. 
+                    에픽 등급의 무공비급이 없을 때 채용해볼만 한 보물. 
+                    사실상 치명타가 잘만 발동되면 공격력 증가율이 50%가 되는 꼴이다. 
+                    다만 그 외에는 토핑작을 하기 위해 뺑이를 돌릴때 뿔 대신 넣는 정도다. 
+                    <strong>단, 어둠 모드 후반부(7스테이지부터)에서는 채용할만하다. </strong>
+                    특히 뱀파이어맛 쿠키를 투입해서 보스몹에 폭딜을 가할 때.
+                </div>
+            </div>
+
+            <h2 class="heading">
+                <div id="epic">EPIC</div>
+            </h2>
+
+            <h3 class="heading">
+                <div id="Feather">설탕백조의 샤이닝 설탕깃털</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/설탕깃털.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">설탕깃털의 힘이 가장 먼저 쓰러진 쿠키 하나를 부활시킵니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 부활 시 체력 (20 + 7.3n)%</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    가장 먼저 기절한 쿠키를 부활시키는 보물로 월드 탐험을 할 때 후반부 스테이지의 별 3개를 채우는 난이도를 줄여주며 PVP에서도 유용한 보물. 
+                    주로 딜러가 저격당했을때 목숨을 연장시킨다. 부활하면 스킬 쿨타임이 초기화되어 경우에 따라 폭딜을 낼 수도 있다.
+                    그러나 힐러가 먼저 쓰러지면 딜러가 쓰러지는 것에 비해 특별한 이득이 없다는 것이 단점. 
+                    또한 부활한다고 따로 보호막이 부여되는 능력은 없어 깃털 레벨이 낮으면 부활하자마자 쓰러질 가능성도 존재한다. 
+                    <strong>만렙이면 체력을 100%로 부활시킨다.</strong>
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Martialarts">나이든 순례자의 승리를 향한 무공비급</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/무공비급.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">무공비급에서 힘을 얻어 모든 쿠키의 공격력이 증가합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 공격력 (30 + 2.7n)% 증가</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    <strong>쿠키런 킹덤 최고의 사기 보물.</strong> 다른건 몰라도 이 보물은 어떤 조합이든 들어간다. 
+                    모든 쿠키의 공격력을 그냥 30% 올려준다. 
+                    액티브였어도 사기일 텐데 효과가 상시 적용되는 패시브 보물이다
+                    이 게임에서 '공격력'이라는 능력치는 가장 중요한 요소 중 하나인데 이를 보물 하나로 비약적으로 증가시키는 셈이다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Torch">순례자의 마을 촌장의 활활 화르륵 횃불</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/횃불.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">불타오르는 횃불이 가까운 적에게 모든 쿠키의 공격력 총합에 비례하는 피해를 지속적으로 줍니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 피해량 (20 + 2.7n)%</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임: 20초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    장판이 깔린 자리에 지속딜을 넣어주는 보물인데 이 게임은 적들이 가만히 있지않고 움직이는 데다가, 쓸데없이 데미지 계수가 아군 <strong>전체</strong>의 공격력 합계 비례인지라 공격력이 낮은 탱커들의 공격력까지 합산돼서 데미지도 PVE에서 스토리 후반으로 갈 수록 미묘하다.
+                    거기에 PVE에서는 자동 전투 시 적이 출현하지도 않았는데 쿨타임이 차자마자 보물을 발동시키는 상당히 어처구니 없는 AI를 자랑한다.
+                    이후 신 컨텐츠로 길드 토벌전이 추가되고 그나마 입지가 나아졌는데, 길드 토벌 보스몹인 레드벨벳 케이크 드래곤이 <strong>공격자에게 피해 반사</strong> 효과를 가지고 있어서 반사 피해를 받을 걱정 없이 피해를 입힐 수 있는 이 보물이 주목받기 시작했다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="mucus">작은 뿔꿈틀이의 끈적끈적 방어용 점액</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/방어용점액.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">현재 체력이 제일 낮은 쿠키 하나가 점액질의 보호를 받아 무적이 됩니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.01.21</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: (2 + 0.273n)초 무적</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임: 60초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    침투형의 저격으로 서포터가 짤리는 것을 방지하기에는 좋지만, 지속시간이 너무 짧고 쿨타임도 길어 이 보물을 사용할 바에는 차라리 '문지기 유령의 단단한 오른쪽 뿔'로 방어력을 올리거나 '설탕백조의 샤이닝 설탕깃털'로 부활효과를 노리는 것이 더 낫다.
+                    또한 PVP는 무조건 자동전투라서 사용 타이밍을 정할 수 없고, 쿨타임도 길어 무의미하다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Branch">정화된 석류신목의 신성한 나뭇가지</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/나뭇가지.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">석류신목의 신성한 힘으로 소환수를 제외한 모든 쿠키에게 최대 체력의 일정 비율만큼 체력 보호막을 생성합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.02.19</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 대상 체력의 (15+1.4n)% 체력 보호막 생성</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임: 60초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    쿠키런 킹덤 서비스 시작 이후 <strong>업데이트로 신규 출시</strong>된 최초의 보물. 
+                    '체력 회복'과 비슷한 유형인 '보호막'이 아군 전체에게 씌워진다는 점은 높이 평가할 수 있으나, 탱커를 제외한 쿠키들의 체력이 그렇게 높은 편도 아닌데다 쿨타임이 지나치게 길어서 제대로 효과를 보기 어렵다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Monocle">책방골목 올빼미의 뽀득뽀득 모노클</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../treasure-img/모노클.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">모노클을 통해 쿠키를 바라보면 나쁜 기운을 판별해낼 수 있다는데? 아군의 디버프를 제거하고 체력을 회복시킵니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.03.06</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 23초마다 디버프 제거, 최대 체력의 (15+1.4n)% 회복</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임: 23초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    업데이트로 추가된 두번째 보물이다. 
+                    이 보물은 길드 전용 뽑기에서만 획득이 가능하고 기존 보물 뽑기에서 등장하지 않는다.
+                    슈크림맛 쿠키와 마찬가지로 길드 뽑기에서만 나오기 때문에 아직 연구가 부족하지만, 보통 쓴다면 아레나에서 뿔을 빼고 쓰는 편이며 조합에 따라 효율이 천차만별이다.
+                    출시 당시 힐량이 표기된 것보다 과다하게 들어가는 버그가 있었으나 이후에 수정되었다.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Cloak">격분한 도서관 사서의 마법 망토</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../none-img/그림없음.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">도서관 사서의 마법 망토로 공격 속도 증가율이 가장 높은 쿠키 2종의 공격 속도가 45% 만큼 증가합니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.05.28</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: (45+n)% 만큼의 공격 속도 증가</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 패시브</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    통상공격의 비중이 매우 높은 마들렌맛 쿠키와 페스츄리맛 쿠키, 그리고 이들을 보조하는 민트초코 쿠키를 위한 보물. 
+                    사실상 이들만 제대로 써먹을 수 있는 효과라서 이 보물을 쓰겠다면 공격속도 특화 파티를 구성해야 한다.
+                    여기에서의 도서관 사서는 블루베리 요거트 마법학당의 교사 망령들 중 하나인 '악몽을 꾸는 도서관 사서(베이가)'를 뜻한다. 
+                    이 보물의 능력은 체력이 절반 가량이 되면 공격속도가 급격히 올라가서 파티를 전멸시키는 도서관 사서의 특성을 반영한 것.
+                </div>
+            </div>
+
+            <h3 class="heading">
+                <div id="Staff">눈 먼 치료사의 힐링 스태프</div>
+            </h3>
+            <div class="heading-content">
+                <div class="table-wrap">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="paragraph">
+                                        <span class="image-align-normal">
+                                            <span class="image-wrapper">
+                                                <img class="image" src="../../none-img/그림없음.png" loading="lazy">
+                                            </span>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="indent">
+                    <blockquote class="quote">
+                        <div class="paragraph">현재 체력이 가장 낮은 아군을 총 공격력의 55%만큼 5초 동안 회복시킵니다.</div>
+                    </blockquote>
+                </div>
+                <ul class="list">
+                    <li>
+                        <div class="paragraph">출시일: 2021.05.28</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">기본 효과: 총 공격력의 (55+5n)%만큼 회복</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">효과 발동 유형: 액티브</div>
+                    </li>
+                    <li>
+                        <div class="paragraph">쿨타임: 18초</div>
+                    </li>
+                </ul>
+                <div class="paragraph">
+                    <br>
+                    퓨어바닐라 쿠키의 스태프.
+                    케이크 타워에서 회복형 쿠키를 데려갈 수 없을 때 유용해 보인다.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="../../js/topbtn.js"></script>
+    <script src="../../js/fold.js"></script>
+</body>
+
+</html>

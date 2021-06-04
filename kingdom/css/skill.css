@@ -36,8 +36,8 @@ body:lang(ko){
 }
 @media (max-width: 500px){
     .content{
-        padding-right: 0px;
-        padding-left: 0px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 .content-box{
