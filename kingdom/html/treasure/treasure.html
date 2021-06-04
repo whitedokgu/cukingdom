@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/COMMON.css">
+    <link rel="stylesheet" href="../../css/treasure.css">
+    <link rel="stylesheet" href="../../css/top.css">
+    <link rel="stylesheet" href="../../css/fold.css">
 
     <title>COOKIERUN: KINGDOM</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -17,11 +19,59 @@
 <body>
     <div class="content">
         <div class="content-box">
+            <div id="list-fold">
+                <div id="spreadBtn" class="fold">
+                    <div> [ 펼치기 · 접기 ]</div>
+                </div>
+
+                <div id="hiddenContent" class="example" style="display: none;">
+                    <div class="rating-list">
+                        <div class="rating-list-in" style="background-color: #e7d7cb;">
+                            <img src="../../Rating-img/COMMON.png">
+                        </div>
+                        <div class="rating-list-content">
+                            <a href="#">문지기 유령의 단단한 오른쪽 뿔</a> ·
+                            <a href="#">치즈볼새의 소중한 동전 주머니</a> ·
+                            <a href="#">왕자 곰젤리의 말랑말랑 젤리시계</a> ·
+                            <a href="#">은행강도의 탐욕스런 마법 금고</a>
+                        </div>
+                        
+                        <div class="rating-list-in" style="background-color: #d6ffff;">
+                            <img src="../../Rating-img/RARE.png">
+                        </div>
+
+                        <div class="rating-list-content">
+                            <a href="#">어린 순례자의 장난감 새총</a> ·
+                            <a href="#">아이스크림 상인 유령의 신기루 아이스크림</a> ·
+                            <a href="#">무녀맛 쿠키의 영험한 종이부적</a> ·
+                            <a href="#">행복한 곰젤리의 숨겨둔 사탕</a> ·
+                            <a href="#">골카론의 날카로운 낫</a>
+                        </div>
+
+                        <div class="rating-list-in" style="background-color: #ffafc6;">
+                            <img src="../../Rating-img/EPIC.png">
+                        </div>
+
+                        <div class="rating-list-content">
+                            <a href="#">설탕백조의 샤이닝 설탕깃털</a> ·
+                            <a href="#">나이든 순례자의 승리를 향한 무공비급</a> ·
+                            <a href="#">순례자의 마을 촌장의 활활 화르륵 횃불</a> ·
+                            <a href="#">작은 뿔꿈틀이의 끈적끈적 방어용 점액</a> ·
+                            <a href="#">정화된 석류신목의 신성한 나뭇가지</a> ·
+                            <a href="#">책방골목 올빼미의 뽀득뽀득 모노클</a> ·
+                            <a href="#">격분한 도서관 사서의 마법 망토</a> ·
+                            <a href="#">눈 먼 치료사의 힐링 스태프</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
             <div class="heading-content">
                 <div class="paragraph">
                     정규 쿠키런 시리즈에 등장했던 그 보물들이 여기에서도 등장한다.
                     <br><br>
-                    에피소드 2-16을 클리어하면 보물 티켓을 얻으면서 획득할 수 있게 되며, 마찬가지로 보물 티켓이나 크리스탈로 뽑기를 하여 획득할 수 있다. 
+                    에피소드 2-16을 클리어하면 보물 티켓을 얻으면서 획득할 수 있게 되며, 마찬가지로 보물 티켓이나 크리스탈로 뽑기를 하여 획득할 수 있다.
                     뽑기를 1회 할 때마다 쿠키 뽑기를 할 때처럼 마일리지샵에 마일리지가 쌓이고 60 마일리지로 보물 티켓을 구입할 수
                     있다.
                     <br><br>
@@ -33,7 +83,8 @@
                     개방된다.
                     <br><br>
                     보물은 패시브로 적용되는 것이 있고 액티브로 직접 터치해야 발동할 수 있는 것이 있다. 이게 보물 설명에서는 나오지 않기 때문에 따로 정보를 얻지 않는 이상 직접 발동해서
-                    알아봐야만 했고, 5월 28일 패치를 통해 비로소 패시브/액티브 유무와 쿨타임을 알 수 있게 되었다. 에피소드 / 현상수배의 자동전투 옵션을 켰다면 쿨타임이 돌아갈 때마다 자동으로 발동하며,
+                    알아봐야만 했고, 5월 28일 패치를 통해 비로소 패시브/액티브 유무와 쿨타임을 알 수 있게 되었다. 에피소드 / 현상수배의 자동전투 옵션을 켰다면 쿨타임이 돌아갈 때마다 자동으로
+                    발동하며,
                     PvP에서는 반드시 자동으로만 동작한다.
                     <br><br>
                     정화된 석류신목의 나뭇가지를 제외하면 보물들의 주인은 모두 이 게임 스토리 모드에 등장하는 NPC들이다.
@@ -41,7 +92,10 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
+
+    
+    <script src="../../js/fold.js"></script>
 </body>
 
 </html>

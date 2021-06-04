@@ -109,3 +109,9 @@ body{
     background-color: #9f51f3; 
     color: white;
 }
+#list-fold{
+    border: 5px solid;
+    border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+    border-image-slice: 1;
+    margin-top: 7px;
+}
