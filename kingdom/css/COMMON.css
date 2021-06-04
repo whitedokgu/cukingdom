@@ -148,3 +148,7 @@ table tr td.table-typeimg img{
 .to-top {
     background: #DA914B;
 }
+a{
+    text-decoration: none;
+    color: #0275d8;
+}

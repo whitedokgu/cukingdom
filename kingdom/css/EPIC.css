@@ -153,3 +153,7 @@ table tr td.table-typeimg img{
       width: 101.5%;
   }
 }
+a{
+    text-decoration: none;
+    color: #0275d8;
+}

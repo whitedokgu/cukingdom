@@ -10,9 +10,6 @@ html{
         font-size: 14px;
     }
 }
-a{
-    text-decoration: none;
-}
 body:lang(ko){
     word-break: keep-all;
 }
@@ -74,6 +71,7 @@ body{
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
 }
+
 .table-wrap{
     display: block;
     max-width: 100%;

@@ -28,10 +28,10 @@ body:lang(ko){
         padding-left: 300px;
     }
 }
-@media (max-width: 955px){
+@media (max-width: 960px){
     .content{
-        padding-right: 150px;
-        padding-left: 150px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
 }
 @media (max-width: 500px){

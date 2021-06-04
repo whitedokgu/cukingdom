@@ -7,6 +7,7 @@ html{
 }
 a{
     text-decoration: none;
+    color: #0275d8;
 }
 body:lang(ko){
     word-break: keep-all;
@@ -30,10 +31,10 @@ body{
         padding-left: 300px;
     }
 }
-@media (max-width: 955px){
+@media (max-width: 960px){
     .content{
-        padding-right: 150px;
-        padding-left: 150px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
 }
 @media (max-width: 500px){
