@@ -1,0 +1,29 @@
+.image-align-normal1{
+    height: 250px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.image-wrapper1{
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+table img.image1 {
+    height: 100%;
+    display: inline-block;
+    max-width: none;
+}
+
+.quote {
+    padding: 1em calc(2em + 25px) 1em 1em;
+    margin: 1em 0;
+    background: #eee;
+    display: table;
+    border: 2px dashed #ccc;
+    border-left: 5px solid #71bc6d;
+}

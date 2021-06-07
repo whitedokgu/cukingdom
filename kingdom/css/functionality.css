@@ -29,6 +29,10 @@ body{
         font-size: 14px;
     }
 }
+a{
+    text-decoration: none;
+    color: #0275d8;
+}
 .content{
     scroll-behavior: smooth;
     position: relative;

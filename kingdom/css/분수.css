@@ -1,0 +1,28 @@
+table.table{
+    width: 100%;
+    border: 2px solid #fff;
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+}
+table.table tr{
+    background-color: #fff;
+}
+table.table tr td{
+    width: 16%;
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+table.table tr td .paragraph,
+table.table2 tr td .paragraph{
+    margin-bottom: 0;
+}
+table.table2{
+    background-color: #f5f5f5;
+    border-collapse: collapse;
+}
+table.table2 tr td{
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
