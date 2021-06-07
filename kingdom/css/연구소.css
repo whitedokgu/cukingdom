@@ -1,0 +1,135 @@
+* {
+    font-family: inherit;
+}
+html{
+    margin-bottom: 200px;
+    font-size: 16px;
+}
+@media (max-width: 500px){
+    html{
+        font-size: 14px;
+    }
+}
+a{
+    text-decoration: none;
+}
+body:lang(ko){
+    word-break: keep-all;
+}
+body{
+    margin: 0;
+    background-color: white;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    padding-bottom: 490px;    
+}
+@media (max-width: 680px){
+    body{
+        font-size: 14px;
+    }
+    table{
+        font-size: 12px;
+    }
+}
+a{
+    text-decoration: none;
+    color: #0275d8;
+}
+.content{
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
+}
+@media (min-width: 970px){
+    .content{
+        padding-right: 300px;
+        padding-left: 300px;
+    }
+}
+@media (max-width: 960px){
+    .content{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 680px){
+    .content{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+.content-box{
+    position: relative;
+    height: 800px;
+}
+@media (max-width: 640px){
+    .content-box {
+        height: 926px;
+    }
+}
+@media (max-width: 500px){
+    .content-box {
+        height: 684px;
+    }
+}
+#list-fold{
+    border: 5px solid;
+    border-image: linear-gradient(to right, #fbfcb9be, #ffcdf3aa, #65d3ffaa);
+    border-image-slice: 1;
+    margin-top: 7px;
+}
+.heading{
+    margin: 19px 0  13px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+.table-wrap{
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+.table{
+    width: 100%;
+    border:2px solid #da914b;
+    background-color: white;
+    border-collapse: collapse;
+}
+.table tbody tr.top-tr{
+    background-color: #da914b;
+    color: #000;
+}
+.table tbody tr td{
+    text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+}
+.paragraph{
+    margin-bottom: 16px;
+}
+.image-align-normal{
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.image-wrapper{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+img.image{
+    width: 30%;
+    position: relative;
+}
+@media (max-width: 680px){
+    img.image{
+            width: 100%;
+        }
+}
