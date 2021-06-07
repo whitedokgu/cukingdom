@@ -44,7 +44,7 @@
 
 body {
   margin: var(--header-height) 0 0 0;
-  padding: 1rem 0.5rem 0 4.8rem;
+  padding: 1rem 0.5rem 0 .5rem;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -104,6 +104,7 @@ img {
   display: none;
 }
 
+
 .header__input {
   width: 100%;
   border: none;
@@ -125,7 +126,6 @@ img {
   color: var(--title-color);
   cursor: pointer;
 }
-
 /*========== NAV ==========*/
 .nav-link{
   cursor: pointer;
