@@ -21,6 +21,10 @@ body{
     height: 100%;
     padding-bottom: 490px;
 }
+a{
+    text-decoration: none;
+    color: #0275d8;
+}
 .content{
     scroll-behavior: smooth;
     position: relative;
