@@ -13,6 +13,7 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="../../css/cooltime.css">
     <link rel="stylesheet" href="../../css/top.css">
+    <link rel="stylesheet" href="../../css/fold.css">
 
     <title>COOKIERUN: KINGDOM</title>
 </head>
@@ -20,10 +21,27 @@
 <body>
     <div class="content">
         <div class="content-box">
+            <div id="list-fold">
+                <div id="spreadBtn" class="fold">
+                    <div> [ 목록 ]</div>
+                </div>
+
+                <div id="hiddenContent" class="example" style="display: none;">
+                    <div class="rating-list">
+                        <div class="rating-list-content">
+                            <a href="#쿨타임토핑">쿨타임토핑</a> ·
+                            <a href="#쿨타임계산식">쿨타임계산식</a> ·
+                            <a href="#쿨타임표">쿨타임표</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <h1 class="heading">
                 쿨타임
             </h1>
-            <h2 class="heading">
+            <div id="쿨타임토핑"></div>
+            <h2 class="heading">               
                 쿨타임 토핑
             </h2>
             <div class="heading-content">
@@ -144,6 +162,7 @@
                 <br><br>
             </div>
 
+            <div id="쿨타임계산식"></div>
             <h2 class="heading">
                 쿨타임 계산식
             </h2>
@@ -186,6 +205,7 @@
                 </div>
             </div>
 
+            <div id="쿨타임표"></div>
             <h2 class="heading">
                 쿨타임 표
             </h2>
@@ -209,6 +229,7 @@
         <i class="fas fa-chevron-up"></i>
     </a>
     <script src="../../js/topbtn.js"></script>
+    <script src="../../js/fold.js"></script>
 </body>
 
 </html>
