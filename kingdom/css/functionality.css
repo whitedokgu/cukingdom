@@ -46,8 +46,8 @@ a{
 }
 @media (max-width: 960px){
     .content{
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 150px;
+        padding-left: 150px;
     }
 }
 @media (max-width: 680px){
