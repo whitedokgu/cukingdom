@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="../../../css/house.css">
+
+    <title>COOKIERUN: KINGDOM</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="content-box">
+            <h3 class="heading">
+                쿠키 하우스
+            </h3>
+            <div class="heading-content">
+                <div class="paragraph">
+                    <span class="image-align-normal">
+                        <span class="image-wrapper">
+                            <img class="image" src="../etc/쿠키하우스.png" loading="lazy">
+                        </span>
+                    </span>
+                </div>
+                </td>
+            </div>
+            <br><br>
+            <div class="paragraph">
+                <br>
+                일정 시간마다 경험치 사탕 레벨 1을 비축한다.
+                쿠키 하우스 레벨이 높아질수록 더 많은 경험치 사탕을 비축할 수 있으며 시간 당 별사탕 생산량이증가한다.
+                5레벨까지는 롤케이크 나무조각, 각설탕 조각과 소량의 코인만 필요하지만, 6레벨 이상부터는 오로라 재료까지 요구되고 코인 또한 부담이 된다.
+                쿠키성의 레벨에 따라 쿠키 하우스의 최대 레벨과 최대 개수가 증가한다.
+                <br><br>
+                쿠키 하우스가 레벨에 따라, 별사탕의 비축량은 늘어나지만 생산량은 생각보다 크게 늘지 않으며. 레벨 8에서 9로
+                올리면 생산량이 겨우 1%정도 증가하고, 9에서 10으로 올리면 7%증가한다.
+                그러므로 비축 시간을 참고하여 플레이어에 생활패턴과 오로라 재료의 재고에 따라 업그레이드를 하는 것이 바람직하다.
+                11레벨 업그레이드부터는 더 이상 최대 시간이 늘지 않으며 오로라 재료 요구량도 급격히 증가하기 때문에 기둥 부족에 허덕이는 라이트 유저라면 9~10레벨로 유지시켜도 충분하다.
+                <br><br>
+                서비스 초기에는 쿠키 하우스를 한 채씩 눌러가면서 수확해야만 했기 때문에, 하우스 수가 늘어나면서 수확하기 힘들어져 편하게 수확하려면 한 곳에 몰아짓는 것이 강제되어 일괄 수확 기능을
+                추가해 달라는
+                유저들의 요구가 끊이지 않았다.
+                결국 2021년 2월 19일 패치로 쿠키 하우스 한 번 누르기로 모든 쿠키 하우스의 별사탕을 수확할 수 있도록 변경.
+                쿠키 하우스를 몰아지을 필요가 없어졌다.
+                <br><br>
+                2021년 4월 8일 패치로 쿠키 하우스의 최대 레벨이 15까지 확장되었다.
+                <br><br>
+                2021년 5월 13일 패치로 쿠키 하우스 9렙~15렙의 별사탕 생산 개수가
+                상향되었으며, 레벨 5 이상의 동레벨 쿠키 하우스를 합쳐 2층 쿠키 하우스를 만들거나 다시 분리할 수 있다. 업그레이드 재료와 별사탕 수는 두 개분의 쿠키 하우스와 동일하며 업그레이드 시
+                필요한
+                설탕노움은 한 명이다. 하지만 건설 시간이 2배로 늘어나며 그동안 생산이 중단되므로 공간 활용이나 설탕노움 배분 자체는 효과적이지만 게임을 자주 하는 스타일이라면 업그레이드할 때는
+                분리했다가
+                업그레이드를 하고 나서 합치는 것이 더 효율적이다.
+                <br><br>
+                아트북에 쿠키 하우스 내부 인테리어를 한다는 설정도 있고, 인터뷰를 통해서도 내부 꾸미기 기능에 대한 컨셉아트를 보여주는 등,
+                차후에 쿠키 하우스 내부를 꾸밀 수 있는 컨텐츠가 추가될 것으로 보인다.
+                <br>
+            </div>
+            <br><br>
+            <div class="table-wrap">
+                <table class="table">
+                    <tbody>
+                        <tr class="top-tr">
+                            <td>
+                                <div class="paragraph"><strong>건물 레벨</strong></div>
+                            </td>
+                            <td>
+                                <div class="paragraph"><strong>생산 최대 시간</strong></div>
+                            </td>
+                            <td>
+                                <div class="paragraph"><strong>생산 개수</strong></div>
+                            </td>
+                            <td>
+                                <div class="paragraph"><strong>레벨업 필요재료</strong></div>
+                            </td>
+                            <td>
+                                <div class="paragraph"><strong>건설 소요 시간</strong></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">1</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">5분</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">롤케이크 나무조각 2개</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">5분</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">2</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">9분</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">2</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">롤케이크 나무조각 3개, 2000 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1분</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">3</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">15분</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">4</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">각설탕 조각 4개, 3000 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">3분</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">4</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">25분</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">7</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">각설탕 조각 5개, 5000 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">10분</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">5</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">17</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">롤케이크 나무조각 7개, 각설탕 7개, 1만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">30분</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">6</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">2시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">35</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 나침반 1개, 롤케이크 나무조각 10개, 각설탕 조각 10개, 2만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1시간</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">7</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">3시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">54</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 벽돌 1개, 롤케이크 나무조각 20개, 각설탕 조각 20개, 5만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">3시간</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">8</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">4시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">74</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 2개, 오로라 나침반 2개, 롤케이크 나무조각 30개, 9만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">6시간</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">9</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">6시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">116</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 3개, 오로라 벽돌 3개, 각설탕 조각 30개, 14만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">12시간</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">10</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">8시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">164</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 4개, 오로라 벽돌 4개, 오로라 나침반 4개, 20만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1일</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">11</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">8시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">172</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 7개, 오로라 벽돌 7개, 오로라 나침반 7개, 28만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1일</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">12</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">8시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">181</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 11개, 오로라 벽돌 11개, 오로라 나침반 11개, 36만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1일</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">13</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">8시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">191</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 16개, 오로라 벽돌 16개, 오로라 나침반 16개, 44만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">1일</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">14</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">8시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">202</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 -개, 오로라 벽돌 -개, 오로라 나침반 -개, -만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">-일</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="paragraph">15</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">8시간</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">214</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">오로라 기둥 -개, 오로라 벽돌 -개, 오로라 나침반 -개, -만 코인</div>
+                            </td>
+                            <td>
+                                <div class="paragraph">-일</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="paragraph"></div>
+        </div>
+    </div>
+    </div>
+
+</body>
