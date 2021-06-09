@@ -125,13 +125,7 @@ img.image2{
 img.image3{
     width: 100%;
 }
-@media (min-width: 1300px){
-    img.image3{
-        width: 50%;
-        display: block;
-        margin: auto;
-    }  
-}
+
 @media (min-width: 1450px){
     img.image3{
         width: 50%;

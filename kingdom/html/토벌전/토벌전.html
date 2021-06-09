@@ -13,6 +13,7 @@
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="../../css/토벌전.css">
     <link rel="stylesheet" href="../../css/top.css">
+    <link rel="stylesheet" href="../../css/fold.css">
 
     <title>COOKIERUN: KINGDOM</title>
 </head>
@@ -20,9 +21,27 @@
 <body>
     <div class="content">
         <div class="content-box">
+            <div id="list-fold">
+                <div id="spreadBtn" class="fold">
+                    <div> [ 덱 종류 ]</div>
+                </div>
+
+                <div id="hiddenContent" class="example" style="display: none;">
+                    <div class="rating-list">
+                        <div class="rating-list-content">
+                            <a href="#">닼블탐퓨뱀(초반 / 20단계이하)</a><br> 
+                            <a href="#">닼독감퓨뱀(초반 / 21단계이하)</a><br> 
+                            <a href="#">닼감독호뱀(고렙용)</a><br> 
+                            <a href="#">닼감석호뱀</a><br> 
+                            <a href="#">닼감독퓨뱀</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h1 class="heading">
                 토벌전
             </h1>
+
             <h2 class="heading">
                 설명
             </h2>
@@ -31,8 +50,7 @@
                 길드에 가입해야 한다. 이전 레벨의 드래곤을 토벌 완료하면 다음 레벨의 드래곤을 토벌할 수 있다.
                 <br><br>
                 레드 벨벳 케이크 드래곤은 메인보스 취급이라 <strong>기절과 결박과 같은 CC형 상태이상에 면역</strong>이다. 기본 공격도 하나같이 대미지가 무시무시하거나 기절을 걸어대는
-                데다, <strong>피해 반사</strong> 옵션을
-                기본적으로 달고 있는데 이 피해 반사 배율이 스토리와는 비교도 안 될 수준으로 높아 스킬을 잘못 걸면 그대로 스킬의 반사 피해를 입어 스킬을 쓴 파티원을 즉사시켜 버린다.
+                데다, <strong>피해 반사</strong> 옵션을 기본적으로 달고 있는데 이 피해 반사 배율이 스토리와는 비교도 안 될 수준으로 높아 스킬을 잘못 걸면 그대로 스킬의 반사 피해를 입어 스킬을 쓴 파티원을 즉사시켜 버린다.
                 <br><br>
                 길드 토벌전에 참가하면 기여도 수치를 획득할 수 있다. 기여도 수치는 드래곤의 단계가 높을수록, 드래곤에게 입힌 피해량이 많을수록 더 많이 받는다. 드래곤을 토벌하면 길드원 모두가 영웅의
                 횃불과 코인을 획득하며, 길드는 길드 트로피를 획득한다. 드래곤을 처치한 길드원에게는 추가 보상이 주어진다. 영웅의 횃불은 길드 뽑기를 할 때 쓰이므로 보스 공격에 가하는 기여도가 얼마나
@@ -120,6 +138,7 @@
         <i class="fas fa-chevron-up"></i>
     </a>
     <script src="../../js/topbtn.js"></script>
+    <script src="../../js/fold.js"></script>
 </body>
 
 </html>
