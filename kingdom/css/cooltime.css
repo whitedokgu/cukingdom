@@ -94,8 +94,17 @@ body{
     border: 2px solid #da914b;
     border-collapse: collapse;
 }
+.table1{
+    background-color: #fff;
+    width: 100%;
+    border: 2px solid #da914b;
+}
 .table td{
+    align-items: center;
+}
+.table1 td{
     text-align: center;
+    width: 50%;
 }
 .table td.하급{
     background-color:#e7d7cb; 

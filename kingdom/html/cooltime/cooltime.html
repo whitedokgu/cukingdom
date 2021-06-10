@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/cooltime.css">
     <link rel="stylesheet" href="../../css/top.css">
     <link rel="stylesheet" href="../../css/fold.css">
+    <link rel="stylesheet" href="../../css/계산기.css">
 
     <title>COOKIERUN: KINGDOM</title>
 </head>
@@ -204,7 +205,36 @@
                     <strong>최종 쿨타임 = 8.7초</strong>
                 </div>
             </div>
-
+            <div class="table-wrap">
+                <table class="table1">
+                    <tr>
+                        <td>
+                            기본 쿨타임<br>
+                            <input type="text" id="v1"> 초<br>
+                        </td>
+                        <td>
+                            쿨타임 토핑 적용 수치<br>
+                            <input type="text" id="v2"> %<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            시작 쿨타임<br>
+                            <input type="text" id="res1" readonly> 초
+                        </td>
+                        <td>
+                            일반 쿨타임<br>
+                            <input type="text" id="res2" readonly> 초
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" id="계산" value="계산하기" onclick="cal()">
+                            <input type="button" id="초기화" value="초기화" onclick="reset()">
+                        </td>
+                    </tr>
+                </table>
+            </div>
             <div id="쿨타임표"></div>
             <h2 class="heading">
                 쿨타임 표
@@ -230,6 +260,7 @@
     </a>
     <script src="../../js/topbtn.js"></script>
     <script src="../../js/fold.js"></script>
+    <script src="../../js/계산기.js"></script>
 </body>
 
 </html>
