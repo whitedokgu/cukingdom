@@ -31,6 +31,15 @@
 .rating-list-content{
     padding: 6px 0;
 }
+#list-fold{
+    margin-top: 7px;
+    width: 100%;    
+}
+@media (max-width: 500px){
+    #list-fold{
+        width: auto;
+    }
+}
 
 /* -----BTN-----*/
 #spreadBtn{

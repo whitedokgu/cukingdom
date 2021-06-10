@@ -7,6 +7,13 @@ html{
     margin-top: 30px;
     margin-bottom: 200px;
     font-size: 16px;
+    margin-left: 68px;
+}
+@media (max-width: 500px){
+    html{
+        font-size: 14px;
+        margin-left: 0;
+    }
 }
 a{
     text-decoration: none;
@@ -143,7 +150,6 @@ table tr td.table-typeimg img{
 }
 #list-fold{
     border: 2px solid #cba98a;
-    margin-top: 7px;
 }
 .to-top {
     background: #DA914B;
@@ -151,4 +157,41 @@ table tr td.table-typeimg img{
 a{
     text-decoration: none;
     color: #0275d8;
+}
+.content{
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 0;
+}
+@media (min-width: 970px){
+    .content{
+        padding-right: 300px;
+        padding-left: 300px;
+    }
+}
+@media (max-width: 960px){
+    .content{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+@media (max-width: 680px){
+    .content{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+.content-box{
+    position: relative;
+    height: 800px;
+}
+@media (max-width: 640px){
+    .content-box {
+        height: 926px;
+    }
+}
+@media (max-width: 500px){
+    .content-box {
+        height: 684px;
+    }
 }

@@ -1,6 +1,16 @@
 * {
     font-family: inherit;
 }
+html{    
+    font-size: 16px;
+    margin-left: 68px;
+}
+@media (max-width: 500px){
+    html{
+        font-size: 14px;
+        margin-left: 0;
+    }
+}
 a{
     text-decoration: none;
 }
