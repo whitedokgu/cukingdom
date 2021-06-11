@@ -349,3 +349,14 @@ section{
   text-align: center;
   overflow-y: auto;    
 }
+
+.nav__icon.sword_icon{
+  width: 20.81px;
+  height: 21px;
+}
+@media screen and (max-width: 767px) {
+  .nav__icon.sword_icon{
+    width: 19.2px;
+    height: 19px;
+  }
+}
