@@ -142,3 +142,35 @@ body{
 .to-top {
     background: #DA914B;
 }
+
+#r0, #r1, #r2, #r3, #r4, #r5
+{
+    width: 25px;
+    font-size: 14px;
+}
+ #r-res1, #r-res2, #r-res3
+{
+    width: 45px;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+#계산, #초기화{
+    width: 100px;
+}
+.calc{
+    width: 100%;
+    background-color:#fff; 
+    border:2px solid #da914b;
+}
+.calc h2{
+    background-color:#da914b; 
+    color:#fffe00;
+    text-align: center;
+    margin: 0;
+}
+.list{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}

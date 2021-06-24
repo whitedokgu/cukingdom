@@ -93,6 +93,7 @@ body{
     width: 100%;
     border: 2px solid #da914b;
     border-collapse: collapse;
+    text-align: center;
 }
 .table1{
     background-color: #fff;
@@ -127,6 +128,7 @@ body{
 }
 .table td img.image{
     width: 60%;
+    
 }
 img.image2{
     width: 100%;
@@ -170,4 +172,16 @@ img.image3{
 a{
     text-decoration: none;
     color: #0275d8;
+}
+
+#v1, #v2
+{
+    width: 25px;
+    font-size: 14px;
+}
+ #res1, #res2
+{
+    width: 45px;
+    font-size: 14px;
+    pointer-events: none;
 }
